@@ -6,7 +6,7 @@
 <title>Fatma | AIGC Creator — أسود وذهبي</title>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#050505;--panel:#0b0b0b;--line:#5a4308;--gold:#d4af37;--gold2:#d4af37;--txt:#d4af37;--mute:#d4af37;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root{--bg:#000;--panel:#050505;--line:#8f6b08;--gold:#d4af37;--gold2:#d4af37;--txt:#d4af37;--mute:#d4af37;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 *,*::before,*::after{box-sizing:inherit}
 html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;background:var(--bg);color:var(--txt);font-family:'Cairo',system-ui,sans-serif;line-height:1.8}
@@ -19,14 +19,14 @@ h2{font-size:1.7rem;font-weight:800;color:var(--gold2);margin-bottom:6px}
 .btn{display:inline-block;border:0;border-radius:999px;padding:11px 26px;font:800 1rem 'Cairo',sans-serif;cursor:pointer;text-decoration:none}
 .btn.line{background:none;border:1.5px solid var(--gold);color:var(--gold2)}
 :focus-visible{outline:3px solid var(--gold2);outline-offset:3px}
-.hero img{width:100%;display:block;border-radius:18px;border:1px solid var(--line);filter:grayscale(1) sepia(1) saturate(1.7) hue-rotate(3deg) contrast(1.04)}
+.hero img{width:100%;display:block;border-radius:18px;border:1px solid var(--line);filter:grayscale(1) sepia(1) saturate(6) hue-rotate(8deg) contrast(1.08) brightness(.96)}
 .hero{padding-top:22px}
 .hero h1{font-size:clamp(1.7rem,5vw,2.8rem);font-weight:800;margin:26px 0 6px;color:var(--gold2)}
 .hero p{color:var(--mute);margin:0 0 20px;max-width:560px}
 .row{display:flex;gap:12px;flex-wrap:wrap}
 .work{display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:28px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:18px}
 .work video{width:100%;border-radius:12px;background:#000;aspect-ratio:9/16;display:block}
-.badge{display:inline-block;background:#171305;color:var(--gold2);border:1px solid var(--gold);border-radius:999px;padding:3px 14px;font-size:.9rem;font-weight:600}
+.badge{display:inline-block;background:#000;color:var(--gold2);border:1px solid var(--gold);border-radius:999px;padding:3px 14px;font-size:.9rem;font-weight:600}
 .work h3{font-size:1.5rem;margin:12px 0 4px}
 .work p{color:var(--mute);margin:0 0 16px}
 .tag{color:var(--gold);font-size:.9rem}
@@ -45,12 +45,12 @@ h2{font-size:1.7rem;font-weight:800;color:var(--gold2);margin-bottom:6px}
 .opts{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
 .opts label{flex:1 1 150px;border:1.5px solid var(--line);border-radius:12px;padding:9px 12px;cursor:pointer;display:flex;gap:8px;align-items:center}
 .opts input{accent-color:var(--gold)}
-.opts label:has(input:checked){border-color:var(--gold);background:#181305}
+.opts label:has(input:checked){border-color:var(--gold);background:#000}
 .qty{display:flex;align-items:center;gap:12px;margin-bottom:16px}
 .qty button{width:40px;height:40px;border-radius:50%;border:1.5px solid var(--gold);background:none;color:var(--gold2);font-size:1.3rem;cursor:pointer}
 .qty output{min-width:30px;text-align:center;font-size:1.3rem;font-weight:800}
 .sum{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}
-.sum div{background:#090909;border:1px solid var(--line);border-radius:12px;padding:10px;text-align:center}
+.sum div{background:#000;border:1px solid var(--line);border-radius:12px;padding:10px;text-align:center}
 .sum b{display:block;font-size:1.35rem;color:var(--gold2)}
 .sum span{color:var(--mute);font-size:.88rem}
 .suit{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
@@ -81,7 +81,7 @@ footer{border-top:1px solid var(--line);padding:22px 0 90px;text-align:center;co
 .brief{background:var(--panel);border:1.5px solid var(--gold);border-radius:18px;padding:22px}
 .fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}.fields .full{grid-column:1/-1}
 .fields label{display:flex;flex-direction:column;gap:6px;font-weight:600;color:var(--gold2);font-size:.95rem}
-.fields input,.fields select,.fields textarea{background:#0c0b09;color:var(--txt);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font:500 1rem 'Cairo',sans-serif;width:100%}
+.fields input,.fields select,.fields textarea{background:#000;color:var(--txt);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font:500 1rem 'Cairo',sans-serif;width:100%}
 .fields textarea{min-height:84px;resize:vertical}
 .fields input:focus,.fields select:focus,.fields textarea:focus{border-color:var(--gold)}
 .brief .btn{margin-top:18px}
