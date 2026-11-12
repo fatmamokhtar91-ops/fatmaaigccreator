@@ -10,16 +10,9 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (PORTFOLIO_DATA.emailPlaceholder) {
-      setSent(true);
-      setTimeout(() => setSent(false), 5000);
-      return;
-    }
-    const subject = encodeURIComponent(`New project inquiry from ${form.name}`);
-    const body = encodeURIComponent(`${form.message}\n\n— ${form.name}\n${form.email}`);
-    window.location.href = `mailto:${PORTFOLIO_DATA.email}?subject=${subject}&body=${body}`;
+    const message = encodeURIComponent(`Hello Fatma! I'd like to request a project.\nName: ${form.name}\nEmail: ${form.email}\nProject details: ${form.message}`);
+    window.open(`${PORTFOLIO_DATA.whatsappLink}?text=${message}`, '_blank', 'noopener,noreferrer');
     setSent(true);
-    setTimeout(() => setSent(false), 4000);
     setForm({ name: '', email: '', message: '' });
   };
 
@@ -159,7 +152,7 @@ export default function Contact() {
                     rows={5}
                     value={form.message}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
-                    placeholder="Tell me about your project, timeline, and what you're looking for..."
+                    placeholder="Which service do you need? Share your idea, references, preferred timeline and any important details..."
                     className="w-full px-4 py-3 bg-ink-900/50 border border-white/10 rounded-xl text-white placeholder:text-ink-500 focus:outline-none focus:border-lavender-500/50 focus:ring-2 focus:ring-lavender-500/20 transition-all resize-none"
                   />
                 </div>
@@ -172,12 +165,12 @@ export default function Contact() {
                 </button>
                 {sent && PORTFOLIO_DATA.emailPlaceholder && (
                   <p className="text-sm text-lavender-300 animate-fade-in">
-                    Thanks for reaching out! A contact email will be added soon. For now, connect with me on social media once links are live.
+                    Your project request is ready in WhatsApp. Please send the pre-filled message to complete your inquiry.
                   </p>
                 )}
                 {sent && !PORTFOLIO_DATA.emailPlaceholder && (
                   <p className="text-sm text-lavender-300 animate-fade-in">
-                    Your email client should be opening. If it doesn't, email me directly at {PORTFOLIO_DATA.email}
+                    WhatsApp should open with your project details. Send the message to complete your inquiry.
                   </p>
                 )}
               </form>

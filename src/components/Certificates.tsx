@@ -3,6 +3,8 @@ import { PORTFOLIO_DATA } from '@/data/portfolio';
 import Reveal from './Reveal';
 
 export default function Certificates() {
+  const realCertificates = PORTFOLIO_DATA.certificates.filter((cert) => !cert.isPlaceholder);
+  if (realCertificates.length === 0) return null;
   return (
     <section id="certificates" className="relative py-24 sm:py-32 overflow-hidden">
       <div className="absolute top-1/3 left-0 w-[400px] h-[400px] bg-lavender-600/8 blur-[120px] rounded-full" />
@@ -14,12 +16,12 @@ export default function Certificates() {
             Certificates & <span className="text-gradient-purple">achievements</span>
           </h2>
           <p className="text-ink-400 text-lg max-w-2xl mx-auto">
-            This section is ready for your certifications. Replace the placeholder cards below with your real credentials.
+            Selected professional credentials and achievements.
           </p>
         </Reveal>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {PORTFOLIO_DATA.certificates.map((cert, i) => (
+          {realCertificates.map((cert, i) => (
             <Reveal key={i} delay={i * 100}>
               <div className="group glass-card overflow-hidden hover:border-lavender-500/20 transition-all duration-500 hover:-translate-y-2">
                 <div className="relative aspect-[4/3] overflow-hidden">
