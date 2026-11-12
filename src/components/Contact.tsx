@@ -54,8 +54,8 @@ export default function Contact() {
               <div
                 className={`group glass-card p-5 flex items-center gap-4 ${!PORTFOLIO_DATA.whatsappPlaceholder ? 'hover:border-lavender-500/20 hover:bg-white/[0.05] transition-all duration-400 cursor-pointer' : ''}`}
               >
-                <div className="w-12 h-12 rounded-xl bg-green-500/15 flex items-center justify-center flex-shrink-0">
-                  <MessageCircle size={22} className="text-green-400" />
+                <div className="w-12 h-12 rounded-xl bg-gold-500/15 flex items-center justify-center flex-shrink-0">
+                  <MessageCircle size={22} className="text-gold-400" />
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="text-xs text-ink-400 mb-0.5">WhatsApp</div>
