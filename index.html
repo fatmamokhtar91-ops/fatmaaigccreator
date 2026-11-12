@@ -107,15 +107,18 @@ footer{border-top:1px solid var(--line);padding:22px 0 90px;text-align:center;co
 .section-kicker{color:var(--gold2);font-weight:800}
 @media(max-width:760px){.topnav .wrap{align-items:flex-start;flex-direction:column}.navlinks{justify-content:flex-start}.service-grid,.project-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:480px){.service-grid,.project-grid{grid-template-columns:1fr}}
-/* BLACK + GOLD FINAL LOCK */
-:root{--bg:#000;--panel:#050505;--line:#8f6b08;--gold:#d4af37;--gold2:#f5e6a8;--txt:#f5e6a8;--mute:#d4af37;--gold:#d4af37;--gold2:#f5e6a8}
-body,main,section,header,footer{background:#000!important}
-.topnav{background:rgba(0,0,0,.96)!important;border-bottom-color:#8f6b08!important}
-.brand span,.navlinks a:hover,.section-kicker,.service-card a,.project-card a{color:#f5e6a8!important}
-.hero img{background:#000;filter:grayscale(1) sepia(1) saturate(8) hue-rotate(355deg) contrast(1.12) brightness(.9)}
-.service-card,.project-card{background:#050505!important;border-color:#8f6b08!important}
-.service-visual{background:#050505!important;border-color:#8f6b08!important}
-.wa{background:#d4af37!important}.wa svg{fill:#050505!important}
+/* Balanced black + gold identity: preserve original hero artwork and readable contrast */
+:root{--bg:#050505;--panel:#121110;--line:#5b471b;--gold:#d4af37;--gold2:#f5e6a8;--txt:#f3ecd8;--mute:#c0b58f}
+body{background:#050505;color:var(--txt)}
+main,section,header,footer{background:transparent}
+.topnav{background:rgba(7,7,7,.94)!important;border-bottom-color:rgba(212,175,55,.35)!important}
+.hero{background:transparent!important}
+.hero img{background:transparent;filter:none!important;opacity:1!important;mix-blend-mode:normal!important}
+.hero h1{background:linear-gradient(90deg,#f5e6a8,#d4af37,#f5e6a8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.service-card,.project-card,.work{background:#121110;border-color:#5b471b}
+.service-visual{background:#121110;border-color:#5b471b}
+.wa{background:#d4af37!important}
+.wa svg{fill:#050505!important}
 </style>
 </head>
 <body>
