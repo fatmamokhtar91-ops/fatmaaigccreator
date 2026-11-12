@@ -11,14 +11,14 @@ export const PORTFOLIO_DATA = {
   name: 'Fatma Omar',
   brandInitial: 'F',          // Single letter shown in the logo square
   username: 'fatma.omarofficially',
-  title: 'AI Content Creator', // Shown as the second line of the hero heading
+  title: 'AIGC Creator', // Shown as the second line of the hero heading
 
   // ---- Hero section ----
-  heroBadge: 'AI-Powered Content Creation',  // Small pill above the hero title
+  heroBadge: 'Fatma | AIGC Creator',  // Small pill above the hero title
   // Two-line hero heading. Line 1 uses {name}, line 2 uses {title}.
   heroLine1: 'Hi, I\u2019m {name}',
   heroLine2: '{title}',
-  tagline: 'Crafting scroll-stopping AI video ads, social media content, and product promos that convert.',
+  tagline: 'AI video ads · Electronic restaurant menus · Websites · Digital products · Creative design',
 
   // ---- About section ----
   aboutImage: 'https://images.pexels.com/photos/17681366/pexels-photo-17681366.jpeg?auto=compress&cs=tinysrgb&h=900&w=600',
@@ -189,5 +189,5 @@ export const PORTFOLIO_DATA = {
   skills: ['Runway ML', 'Midjourney', 'After Effects', 'Premiere Pro', 'Canva', 'CapCut', 'DALL\u00b7E', 'Sora', 'ElevenLabs', 'Photoshop', 'Illustrator', 'Figma'],
 
   // ---- Footer ----
-  footerTagline: 'AI Content Creator · Video Ads · Social Media · Product Promos',
+  footerTagline: 'Fatma | AIGC Creator · AI Video · Digital Experiences · Creative Studio',
 };
