@@ -16,9 +16,9 @@ export const PORTFOLIO_DATA = {
   // ---- Hero section ----
   heroBadge: 'Fatma | AIGC Creator',  // Small pill above the hero title
   // Two-line hero heading. Line 1 uses {name}, line 2 uses {title}.
-  heroLine1: 'Hi, I\u2019m {name}',
-  heroLine2: '{title}',
-  tagline: 'AI video ads · Electronic restaurant menus · Websites · Digital products · Creative design',
+  heroLine1: 'Fatma',
+  heroLine2: 'AIGC Creator',
+  tagline: 'كل الحلول الإبداعية في مكان واحد — من صناعة المحتوى بالذكاء الاصطناعي إلى التصميم الرقمي وتجارب البراند.',
 
   // ---- About section ----
   aboutImage: 'https://images.pexels.com/photos/17681366/pexels-photo-17681366.jpeg?auto=compress&cs=tinysrgb&h=900&w=600',
