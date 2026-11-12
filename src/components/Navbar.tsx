@@ -53,7 +53,7 @@ export default function Navbar() {
             {PORTFOLIO_DATA.brandInitial}
           </span>
           <span className="font-display font-bold text-lg tracking-tight hidden sm:block">
-            Fatma <span className="text-lavender-400">| AIGC Creator</span>
+            {PORTFOLIO_DATA.name}
           </span>
         </a>
 
