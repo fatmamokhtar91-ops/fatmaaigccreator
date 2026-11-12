@@ -47,9 +47,9 @@ export const PORTFOLIO_DATA = {
   emailPlaceholder: true,
 
   // Same pattern for WhatsApp.
-  whatsapp: '[Add your WhatsApp number]',
-  whatsappLink: '#',
-  whatsappPlaceholder: true,
+  whatsapp: '+201013308014',
+  whatsappLink: 'https://wa.me/201013308014',
+  whatsappPlaceholder: false,
 
   location: 'Available Worldwide · Remote',
 
