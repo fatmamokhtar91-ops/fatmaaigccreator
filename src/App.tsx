@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Services from '@/components/Services';
+import ServiceCatalog from '@/components/ServiceCatalog';
 import VideoPortfolio from '@/components/VideoPortfolio';
 import Gallery from '@/components/Gallery';
 import Certificates from '@/components/Certificates';
@@ -15,6 +16,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <ServiceCatalog />
         <Services />
         <VideoPortfolio />
         <Gallery />
