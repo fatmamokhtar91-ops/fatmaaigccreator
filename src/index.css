@@ -15,10 +15,10 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-white via-lavender-200 to-lavender-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-white via-gold to-gold bg-clip-text text-transparent;
   }
   .text-gradient-purple {
-    @apply bg-gradient-to-r from-lavender-400 to-lavender-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-gold to-gold bg-clip-text text-transparent;
   }
   .glass {
     @apply bg-white/5 backdrop-blur-xl border border-white/10;
@@ -42,11 +42,11 @@
   background: #0a0a0a;
 }
 ::-webkit-scrollbar-thumb {
-  background: #6b2fb8;
+  background: #8f6b08;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #8b5fe8;
+  background: #d4af37;
 }
 
 /* Reveal animation triggered by IntersectionObserver */
