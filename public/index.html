@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Fatma | AIGC Creator — أسود وذهبي</title>
+<title>Fatma | AIGC Creator — منصة أسود وذهبي</title>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#000;--panel:#050505;--line:#8f6b08;--gold:#d4af37;--gold2:#d4af37;--txt:#d4af37;--mute:#d4af37;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -90,6 +90,11 @@ footer{border-top:1px solid var(--line);padding:22px 0 90px;text-align:center;co
 .wa svg{width:32px;height:32px;fill:#050505}
 @media(max-width:760px){.work,.two{grid-template-columns:1fr}.packs{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.work video{max-width:300px;margin:0 auto}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* BLACK + GOLD BRAND LOCK: no mauve/purple UI */
+body,main,section,footer{background:#000!important;color:#d4af37}
+.hero{background:#000}
+.hero img{background:#000;filter:grayscale(1) sepia(1) saturate(7) hue-rotate(8deg) contrast(1.12) brightness(.92)}
+/* Keep portfolio sample media original; brand chrome stays black/gold. */
 </style>
 </head>
 <body>
