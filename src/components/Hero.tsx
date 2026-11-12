@@ -39,6 +39,10 @@ export default function Hero() {
           </p>
         </Reveal>
 
+        <Reveal delay={250}>
+          <img src={PORTFOLIO_DATA.bannerImage} alt="Fatma | AIGC Creator — original portrait and F-O brand banner" className="w-full max-w-5xl mx-auto rounded-2xl border border-white/10 shadow-2xl mb-10 object-cover" />
+        </Reveal>
+
         <Reveal delay={300}>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <a
