@@ -4,10 +4,9 @@ import { PORTFOLIO_DATA } from '@/data/portfolio';
 const NAV_LINKS = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
-  { label: 'Services', href: '#services' },
+  { label: 'Services', href: '#solutions' },
   { label: 'Videos', href: '#videos' },
   { label: 'Gallery', href: '#gallery' },
-  { label: 'Certificates', href: '#certificates' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -29,7 +28,7 @@ export default function Footer() {
                 {PORTFOLIO_DATA.brandInitial}
               </span>
               <span className="font-display font-bold text-lg">
-                {PORTFOLIO_DATA.name.split(' ')[0]}<span className="text-lavender-400">{PORTFOLIO_DATA.name.split(' ')[1] || ''}</span>
+                Fatma <span className="text-lavender-400">| AIGC Creator</span>
               </span>
             </div>
             <p className="text-sm text-ink-400 leading-relaxed max-w-xs">
