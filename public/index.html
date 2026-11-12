@@ -111,26 +111,31 @@ footer{border-top:1px solid var(--line);padding:22px 0 90px;text-align:center;co
 </div></section>
 
 <section id="packs"><div class="wrap">
-  <h2>باقات إعلانات الفيديو</h2>
-  <p class="sub">الأسعار ابتدائية بالجنيه المصري، وتختلف حسب الفكرة وعدد المشاهد والتعليق الصوتي والمؤثرات المطلوبة.</p>
+  <h2>طلبات وأسعار الفيديوهات</h2>
+  <p class="sub">اختاري نموذجًا من الأعمال أو اكتبي المطلوب لو عندك فكرة مختلفة، وسأحدد لك السعر المناسب على واتساب.</p>
   <div class="packs" id="packList"></div>
-  <div class="suit" id="suit"></div>
 
-  <div class="calc">
-    <h3>احسبي تكلفة طلبك</h3>
-    <div class="opts" id="calcOpts" role="radiogroup" aria-label="اختيار الباقة"></div>
-    <div class="qty"><span>عدد الفيديوهات</span>
-      <button type="button" id="minus" aria-label="تقليل">−</button>
-      <output id="qty">1</output>
-      <button type="button" id="plus" aria-label="زيادة">+</button>
+  <div class="brief" style="margin-top:24px">
+    <h3 style="color:var(--gold2);margin-bottom:14px">اطلبي تسعيرة الفيديو</h3>
+    <div class="fields">
+      <label>اختاري نموذج فيديو
+        <select id="videoChoice"><option value="">اختاري من نماذج الأعمال</option></select>
+      </label>
+      <label>الباقة المطلوبة
+        <select id="videoPack"><option value="">اختاري الباقة</option></select>
+      </label>
+      <label class="full">لو محتاجة فيديو مختلف، اكتبي المطلوب
+        <textarea id="videoNeed" placeholder="مثال: إعلان منتج جديد، فيديو منيو، ريلز..."></textarea>
+      </label>
+      <label>اسمك
+        <input id="videoName" type="text">
+      </label>
+      <label>رقم الواتساب
+        <input id="videoPhone" type="tel" dir="ltr" inputmode="tel">
+      </label>
     </div>
-    <div class="sum">
-      <div><b id="total">0</b><span>الإجمالي (ج.م)</span></div>
-      <div><b id="dep">0</b><span>مقدم الحجز 50%</span></div>
-      <div><b id="rest">0</b><span>الباقي قبل التسليم</span></div>
-    </div>
-    <a class="btn gold" id="order" href="#">اطلب عبر واتساب</a>
-    <p class="note">السعر النهائي يتأكد بعد الاتفاق على التفاصيل.</p>
+    <button class="btn gold" type="button" id="videoQuote">اطلب السعر عبر واتساب</button>
+    <p class="note">الخدمات التي لا يوجد لها نموذج منشور حاليًا لا تظهر كأعمال مستقلة؛ يمكن طلبها مباشرة عبر واتساب.</p>
   </div>
 </div></section>
 
@@ -161,18 +166,12 @@ footer{border-top:1px solid var(--line);padding:22px 0 90px;text-align:center;co
   </div>
 </div></section>
 
-<section id="brief"><div class="wrap">
-  <h2>نموذج بيانات المشروع</h2>
-  <p class="sub">املأ البيانات التالية ليصلني طلبك مرتبًا عبر واتساب، وكلما كانت التفاصيل أوضح كان التنفيذ أسرع وأدق.</p>
-  <form class="brief" id="briefForm"><div class="fields" id="fields"></div>
-  <button class="btn gold" type="submit">إرسال الطلب عبر واتساب</button></form>
-</div></section>
-
 <section id="contact"><div class="wrap">
-  <h2>تواصل معنا</h2>
-  <p class="sub">ابعت فكرتك وهنبدأ.</p>
+  <h2>الخدمات والتواصل</h2>
+  <p class="sub">لو محتاجة خدمة غير الفيديوهات المعروضة، ادخلي على واتساب واكتبي الخدمة المطلوبة.</p>
   <div class="contact" id="contactList"></div>
 </div></section>
+
 </main>
 <footer><div class="wrap">فاطمة عمر · رؤيتك وإبداعي وقوة الذكاء الاصطناعي</div></footer>
 
@@ -209,60 +208,59 @@ const CFG={
 /* =================================== */
 const $=s=>document.querySelector(s),fmt=n=>n.toLocaleString('en-US');
 const wa=t=>`https://wa.me/${CFG.whatsapp}${t?'?text='+encodeURIComponent(t):''}`;
-$('#waFloat').href=wa('مرحبًا، أريد الاستفسار عن إعلان فيديو');
+$('#waFloat').href=wa('مرحبًا، أريد الاستفسار عن خدمة من Fatma | AIGC Creator');
 
-$('#workList').innerHTML=(()=>{
-const vid=w=>`<video controls playsinline preload="none" poster="${w.poster||''}" src="${w.video}"></video>`;
-const ask=w=>`<a class="btn line" href="${wa('أريد إعلانًا مثل: '+w.title)}" target="_blank" rel="noopener">اطلب مثله</a>`;
-const f=CFG.works.filter(w=>w.featured),o=CFG.works.filter(w=>!w.featured);
-return f.map(w=>`<article class="work">${vid(w)}<div><span class="badge">${w.badge}</span><h3>${w.title}</h3><p>${w.desc}</p><span class="tag">${w.cat}</span><div class="row" style="margin-top:14px">${ask(w)}</div></div></article>`).join('')
-+(o.length?`<div class="grid">${o.map(w=>`<article class="card">${vid(w)}<div class="cb"><span class="badge sm">${w.badge}</span><h3>${w.title}</h3><p>${w.desc}</p><div class="foot"><span class="tag">${w.cat}</span>${ask(w)}</div></div></article>`).join('')}</div>`:'');
-})();
+$('#workList').innerHTML=CFG.works.map(w=>`
+<article class="work">
+  <video controls playsinline preload="none" poster="${w.poster||''}" src="${w.video}"></video>
+  <div>
+    <span class="badge">${w.badge}</span>
+    <h3>${w.title}</h3>
+    <p>${w.desc}</p>
+    <span class="tag">${w.cat}</span>
+    <div class="row" style="margin-top:14px">
+      <a class="btn line" href="${wa('أريد تسعيرة لفيديو مشابه لـ: '+w.title)}" target="_blank" rel="noopener">اطلب تسعيرة</a>
+    </div>
+  </div>
+</article>`).join('');
 
 $('#packList').innerHTML=CFG.packages.map(p=>`
-<div class="pack${p.pop?' pop':''}"><h3>${p.name}</h3><div class="dur">${p.dur}</div>
-<ul>${p.items.map(i=>`<li>${i}</li>`).join('')}</ul><div class="price gold">${fmt(p.price)} ج.م</div></div>`).join('');
-$('#suit').innerHTML='<b style="color:var(--gold2)">مناسبة لـ</b>'+CFG.suitable.map(s=>`<span>${s}</span>`).join('');
+<div class="pack${p.pop?' pop':''}">
+  <h3>${p.name}</h3>
+  <div class="dur">${p.dur}</div>
+  <ul>${p.items.map(i=>`<li>${i}</li>`).join('')}</ul>
+  <div class="price gold">${fmt(p.price)} ج.م</div>
+</div>`).join('');
 
-$('#calcOpts').innerHTML=CFG.packages.map((p,i)=>`
-<label><input type="radio" name="pk" value="${p.id}" ${i===1?'checked':''}> ${p.name} · ${fmt(p.price)} ج.م</label>`).join('');
-let q=1;
-function calc(){
-  const p=CFG.packages.find(x=>x.id===document.querySelector('input[name=pk]:checked').value);
-  const t=p.price*q,d=Math.round(t*CFG.depositPct/100);
-  $('#qty').textContent=q;$('#total').textContent=fmt(t);$('#dep').textContent=fmt(d);$('#rest').textContent=fmt(t-d);
-  $('#order').href=wa(`مرحبًا، أريد ${q} فيديو بباقة ${p.name} (${p.dur}). الإجمالي المبدئي ${fmt(t)} جنيه.`);
-  $('#order').target='_blank';$('#order').rel='noopener';
-}
-$('#minus').onclick=()=>{q=Math.max(1,q-1);calc()};
-$('#plus').onclick=()=>{q=Math.min(20,q+1);calc()};
-document.querySelectorAll('input[name=pk]').forEach(r=>r.onchange=calc);
-calc();
+$('#videoChoice').innerHTML='<option value="">اختاري من نماذج الأعمال</option>'+
+CFG.works.map(w=>`<option value="${w.title}">${w.title}</option>`).join('');
+$('#videoPack').innerHTML='<option value="">اختاري الباقة</option>'+
+CFG.packages.map(p=>`<option value="${p.name}">${p.name} · ${fmt(p.price)} ج.م · ${p.dur}</option>`).join('');
 
-
-const Q=[
-['name','الاسم الكامل','text',1],['phone','رقم الواتساب للتواصل','tel',1],['brand','اسم النشاط أو العلامة التجارية','text'],
-['product','المنتج أو الخدمة المراد الإعلان عنها','text',1],
-['goal','هدف الفيديو',['زيادة المبيعات','التعريف بالعلامة','إطلاق منتج جديد','الترويج لعرض خاص']],
-['audience','الجمهور المستهدف','text'],['pack','الباقة المطلوبة',CFG.packages.map(p=>p.name+' - '+p.price+' ج.م')],
-['qty','عدد الفيديوهات','number'],['lang','لغة الفيديو',['عربية فصحى','عامية مصرية','إنجليزية','بدون كلام']],
-['slogan','النص أو الشعار الإعلاني المطلوب','text'],['colors','ألوان وهوية العلامة','text'],
-['refs','روابط أو أمثلة أعجبتك','text'],['date','الموعد المطلوب للتسليم','date'],['notes','ملاحظات إضافية','area']];
-$('#fields').innerHTML=Q.map(([id,l,t,r])=>{const q=r?' required':'';
- const c=Array.isArray(t)?`<select id="f_${id}"><option value="">اختر</option>${t.map(o=>`<option>${o}</option>`).join('')}</select>`:t==='area'?`<textarea id="f_${id}"></textarea>`:`<input id="f_${id}" type="${t}"${t==='number'?' min="1" value="1"':''}${q}${t==='tel'?' dir="ltr" inputmode="tel"':''}>`;
- return `<label class="${id==='notes'||id==='refs'?'full':''}">${l}${r?' *':''}${c}</label>`}).join('');
-$('#briefForm').onsubmit=e=>{e.preventDefault();
- const m=['*طلب مشروع إعلان فيديو*',...Q.map(([id,l])=>{const v=$('#f_'+id).value.trim();return v?l+': '+v:null}).filter(Boolean)].join('\n');
- window.open(wa(m),'_blank','noopener')};
+$('#videoQuote').onclick=()=>{
+  const model=$('#videoChoice').value.trim();
+  const pack=$('#videoPack').value.trim();
+  const need=$('#videoNeed').value.trim();
+  const name=$('#videoName').value.trim();
+  const phone=$('#videoPhone').value.trim();
+  const lines=['*طلب تسعيرة فيديو*'];
+  if(name) lines.push('الاسم: '+name);
+  if(phone) lines.push('واتساب: '+phone);
+  if(model) lines.push('النموذج المختار: '+model);
+  if(pack) lines.push('الباقة: '+pack);
+  if(need) lines.push('المطلوب: '+need);
+  if(!model && !need) lines.push('أحتاج اقتراح فيديو مناسب من النماذج الموجودة.');
+  window.open(wa(lines.join('\\n')),'_blank','noopener');
+};
 
 $('#contactList').innerHTML=[
- ['واتساب',CFG.phone2,wa('')],
- ['حساب الكاش وإنستا باي (للدفع)',CFG.phone,''],
+ ['واتساب','ابدئي طلب الخدمة',wa('مرحبًا، أريد الاستفسار عن خدمة وأحتاج معرفة السعر.')],
+ ['فيديوهات إعلانية','اختاري نموذجًا أو اكتبي المطلوب',wa('مرحبًا، أريد طلب تسعيرة لفيديو إعلاني.')],
  ['البريد الإلكتروني',CFG.email,'mailto:'+CFG.email],
  ['بيهانس','fatmaomar30',CFG.behance],
  ['لينكدإن','fatma-mokhtar',CFG.linkedin],
  ['البورتفوليو الكامل','شاهد على Canva',CFG.portfolio]
-].map(c=>c[2]?`<a href="${c[2]}" target="_blank" rel="noopener"><small>${c[0]}</small><span dir="ltr">${c[1]}</span></a>`:`<a role="text" style="cursor:default"><small>${c[0]}</small><span dir="ltr">${c[1]}</span></a>`).join('');
+].map(c=>`<a href="${c[2]}" target="_blank" rel="noopener"><small>${c[0]}</small><span>${c[1]}</span></a>`).join('');
 </script>
 </body>
 </html>
