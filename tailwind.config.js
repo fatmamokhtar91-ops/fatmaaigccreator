@@ -28,6 +28,7 @@ export default {
           700: '#8f6b08',
           800: '#6f5205',
           900: '#4d3903',
+          950: '#2f2405',
         },
         // Backward-compatible alias so existing sections also use the gold brand palette.
         lavender: {
