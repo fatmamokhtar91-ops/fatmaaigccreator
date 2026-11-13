@@ -1,4 +1,3 @@
-import { ArrowRight, Play } from 'lucide-react';
 import { PORTFOLIO_DATA } from '@/data/portfolio';
 import Reveal from './Reveal';
 
@@ -7,9 +6,9 @@ export default function Hero() {
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
       {/* Background effects */}
       <div className="absolute inset-0 bg-ink-950" />
-      <div className="absolute inset-0 bg-gradient-to-b from-lavender-900/20 via-transparent to-ink-950" />
-      <div className="absolute top-1/4 -left-32 w-96 h-96 rounded-full bg-lavender-600/20 blur-[120px] animate-glow" />
-      <div className="absolute bottom-1/4 -right-32 w-96 h-96 rounded-full bg-lavender-500/15 blur-[120px] animate-glow" style={{ animationDelay: '1s' }} />
+      <div className="absolute inset-0 bg-gradient-to-b from-gold-900/20 via-transparent to-ink-950" />
+      <div className="absolute top-1/4 -left-32 w-96 h-96 rounded-full bg-gold-600/20 blur-[120px] animate-glow" />
+      <div className="absolute bottom-1/4 -right-32 w-96 h-96 rounded-full bg-gold-500/15 blur-[120px] animate-glow" style={{ animationDelay: '1s' }} />
       <div
         className="absolute inset-0 opacity-[0.03]"
         style={{
@@ -50,10 +49,9 @@ export default function Hero() {
                 e.preventDefault();
                 document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="inline-flex items-center gap-2 px-7 py-3.5 bg-gradient-to-r from-lavender-500 to-lavender-700 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-lavender-500/40 hover:scale-105 transition-all duration-300"
+              className="inline-flex items-center gap-2 px-7 py-3.5 bg-gradient-to-r from-gold-500 to-gold-700 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-gold-500/40 hover:scale-105 transition-all duration-300"
             >
               Start Your Project
-              <ArrowRight size={18} />
             </a>
             <a
               href="#videos"
@@ -63,7 +61,6 @@ export default function Hero() {
               }}
               className="inline-flex items-center gap-2 px-7 py-3.5 glass text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-300"
             >
-              <Play size={18} className="text-lavender-400" />
               View My Work
             </a>
           </div>
@@ -85,7 +82,7 @@ export default function Hero() {
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
         <div className="w-6 h-10 rounded-full border-2 border-white/20 flex items-start justify-center p-1.5">
-          <div className="w-1 h-2 rounded-full bg-lavender-400 animate-bounce" />
+          <div className="w-1 h-2 rounded-full bg-gold-400 animate-bounce" />
         </div>
       </div>
     </section>
