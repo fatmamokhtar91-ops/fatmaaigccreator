@@ -11,10 +11,10 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-white via-lavender-200 to-lavender-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-white via-gold-200 to-gold-400 bg-clip-text text-transparent;
   }
   .text-gradient-purple {
-    @apply bg-gradient-to-r from-lavender-300 to-lavender-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-gold-300 to-gold-500 bg-clip-text text-transparent;
   }
   .glass {
     @apply bg-white/5 backdrop-blur-xl border border-white/10;
@@ -23,17 +23,17 @@
     @apply bg-white/[0.035] backdrop-blur-xl border border-white/[0.08] rounded-2xl;
   }
   .glow-purple {
-    box-shadow: 0 0 40px -10px rgba(167, 139, 250, 0.45);
+    box-shadow: 0 0 40px -10px rgba(212, 175, 55, 0.38);
   }
   .glow-purple-strong {
-    box-shadow: 0 0 60px -5px rgba(167, 139, 250, 0.6);
+    box-shadow: 0 0 60px -5px rgba(212, 175, 55, 0.5);
   }
 }
 
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: #07070a; }
-::-webkit-scrollbar-thumb { background: #7c3aed; border-radius: 4px; }
-::-webkit-scrollbar-thumb:hover { background: #a78bfa; }
+::-webkit-scrollbar-thumb { background: #b99120; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #dfc45a; }
 
 .reveal {
   opacity: 0;
@@ -54,7 +54,7 @@
 
 .gradient-border {
   position: relative;
-  background: linear-gradient(135deg, rgba(139,92,246,0.16), rgba(255,255,255,0.02));
+  background: linear-gradient(135deg, rgba(212,175,55,0.16), rgba(255,255,255,0.02));
   border: 1px solid transparent;
   background-clip: padding-box;
 }
@@ -64,7 +64,7 @@
   inset: 0;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(135deg, rgba(167,139,250,0.55), rgba(255,255,255,0.06));
+  background: linear-gradient(135deg, rgba(212,175,55,0.55), rgba(255,255,255,0.06));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
