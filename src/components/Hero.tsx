@@ -1,4 +1,4 @@
-import { ArrowRight, Play, Sparkles } from 'lucide-react';
+import { ArrowRight, Play } from 'lucide-react';
 import { PORTFOLIO_DATA } from '@/data/portfolio';
 import Reveal from './Reveal';
 
@@ -19,9 +19,8 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 text-center">
         <Reveal>
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-6">
-            <Sparkles size={16} className="text-lavender-400" />
-            <span className="text-sm text-ink-200 font-medium">{PORTFOLIO_DATA.heroBadge}</span>
+          <div className="inline-flex items-center px-4 py-2 rounded-full glass mb-6">
+            <span className="text-sm text-ink-200 font-medium tracking-wide">{PORTFOLIO_DATA.heroBadge}</span>
           </div>
         </Reveal>
 
