@@ -1,8 +1,5 @@
 import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
-import About from '@/components/About';
-import Services from '@/components/Services';
-import ServiceCatalog from '@/components/ServiceCatalog';
+import HomeServices from '@/components/HomeServices';
 import VideoPortfolio from '@/components/VideoPortfolio';
 import Gallery from '@/components/Gallery';
 import Certificates from '@/components/Certificates';
@@ -14,10 +11,7 @@ function App() {
     <div className="min-h-screen bg-ink-950 text-ink-100 overflow-x-hidden">
       <Navbar />
       <main>
-        <Hero />
-        <About />
-        <ServiceCatalog />
-        <Services />
+        <HomeServices />
         <VideoPortfolio />
         <Gallery />
         <Certificates />
