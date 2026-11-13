@@ -49,7 +49,7 @@ export default function Navbar() {
     >
       <nav className="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between">
         <a href="#home" onClick={() => handleClick('#home')} className="flex items-center gap-2 group">
-          <span className="w-9 h-9 rounded-xl bg-gradient-to-br from-lavender-500 to-lavender-700 flex items-center justify-center text-white font-bold text-lg glow-purple group-hover:scale-110 transition-transform duration-300">
+          <span className="w-9 h-9 rounded-xl bg-gradient-to-br from-gold-500 to-gold-700 flex items-center justify-center text-white font-bold text-lg glow-purple group-hover:scale-110 transition-transform duration-300">
             {PORTFOLIO_DATA.brandInitial}
           </span>
           <span className="font-display font-bold text-lg tracking-tight hidden sm:block">
@@ -65,7 +65,7 @@ export default function Navbar() {
                 onClick={() => handleClick(link.href)}
                 className={`px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 ${
                   active === link.href
-                    ? 'text-lavender-300 bg-lavender-500/10'
+                    ? 'text-gold-300 bg-gold-500/10'
                     : 'text-ink-300 hover:text-white hover:bg-white/5'
                 }`}
               >
@@ -78,7 +78,7 @@ export default function Navbar() {
         <a
           href="#contact"
           onClick={() => handleClick('#contact')}
-          className="hidden lg:inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-lavender-500 to-lavender-700 text-white text-sm font-semibold rounded-xl hover:shadow-lg hover:shadow-lavender-500/30 hover:scale-105 transition-all duration-300"
+          className="hidden lg:inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-gold-500 to-gold-700 text-white text-sm font-semibold rounded-xl hover:shadow-lg hover:shadow-gold-500/30 hover:scale-105 transition-all duration-300"
         >
           Let's Talk
         </a>
@@ -106,7 +106,7 @@ export default function Navbar() {
                 onClick={() => handleClick(link.href)}
                 className={`w-full text-left px-4 py-3 rounded-lg text-sm font-medium transition-all ${
                   active === link.href
-                    ? 'text-lavender-300 bg-lavender-500/10'
+                    ? 'text-gold-300 bg-gold-500/10'
                     : 'text-ink-300 hover:text-white hover:bg-white/5'
                 }`}
               >
@@ -118,7 +118,7 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={() => handleClick('#contact')}
-              className="block text-center px-5 py-3 bg-gradient-to-r from-lavender-500 to-lavender-700 text-white text-sm font-semibold rounded-xl"
+              className="block text-center px-5 py-3 bg-gradient-to-r from-gold-500 to-gold-700 text-white text-sm font-semibold rounded-xl"
             >
               Let's Talk
             </a>
