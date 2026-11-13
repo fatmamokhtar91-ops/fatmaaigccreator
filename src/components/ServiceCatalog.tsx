@@ -12,7 +12,7 @@ const offerings = [
     ar: 'منيو إلكتروني للمطاعم والكافيهات',
     text: 'Branded digital menus with QR access and clear food presentation for restaurants and cafés.',
     image: 'https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1400',
-    url: 'https://restaurant-menu-saas.pages.dev/#/abu-khadija?source=fatma',
+    url: 'https://restaurant-menu-saas.pages.dev/#/port-said-fish',
     button: 'مشاهدة المنيو',
   },
   {
