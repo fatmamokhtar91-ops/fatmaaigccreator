@@ -11,7 +11,7 @@ const offerings = [
     title: 'Electronic Restaurant Menus',
     ar: 'منيو إلكتروني للمطاعم والكافيهات',
     text: 'Branded digital menus with QR access and clear food presentation for restaurants and cafés.',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=85',
+    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=85',
     url: 'https://restaurant-menu-saas.pages.dev/#/port-said-fish',
     button: 'مشاهدة المنيو',
   },
