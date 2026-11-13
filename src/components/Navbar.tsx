@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { Menu, X } from 'lucide-react';
 import { PORTFOLIO_DATA } from '@/data/portfolio';
 
 const NAV_LINKS = [
@@ -89,7 +88,7 @@ export default function Navbar() {
           className="lg:hidden text-white p-2 rounded-lg hover:bg-white/5 transition-colors"
           aria-label="Toggle menu"
         >
-          {open ? <X size={22} /> : <Menu size={22} />}
+          {open ? 'Close' : 'Menu'}
         </button>
       </nav>
 
