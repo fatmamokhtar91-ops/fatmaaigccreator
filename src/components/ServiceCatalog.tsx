@@ -9,7 +9,7 @@ const offerings = [
     title: 'Electronic Restaurant Menus',
     ar: 'منيو إلكتروني للمطاعم والكافيهات',
     text: 'Branded digital menus with QR access and clear food presentation for restaurants and cafés.',
-    image: 'https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=1400&q=90',
+    image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9?auto=format&fit=crop&w=1400&q=90',
     url: 'https://restaurant-menu-saas.pages.dev/#/port-said-fish',
     button: 'مشاهدة المنيو',
   },
@@ -48,10 +48,10 @@ const offerings = [
 export default function ServiceCatalog() {
   return (
     <section id="solutions" className="relative py-24 sm:py-32 overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-lavender-950/10 via-transparent to-transparent" />
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-gold-950/10 via-transparent to-transparent" />
       <div className="relative max-w-7xl mx-auto px-5 sm:px-8">
         <div className="text-center mb-14">
-          <span className="text-sm font-semibold text-lavender-400 tracking-widest uppercase">Creative categories</span>
+          <span className="text-sm font-semibold text-gold-400 tracking-widest uppercase">Creative categories</span>
           <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl mt-3 mb-4">
             كل الحلول الإبداعية <span className="text-gradient-purple">في مكان واحد</span>
           </h2>
@@ -75,13 +75,13 @@ export default function ServiceCatalog() {
               </div>
 
               <div className="p-6">
-                <p className="text-lavender-300 text-sm mb-3" dir="rtl">{ar}</p>
+                <p className="text-gold-300 text-sm mb-3" dir="rtl">{ar}</p>
                 <p className="text-ink-400 text-sm leading-relaxed">{text}</p>
 
                 {url && (
                   <a
                     href={url}
-                    className="inline-flex items-center mt-5 rounded-xl border border-lavender-400/40 bg-lavender-500/10 px-4 py-2.5 text-sm font-semibold text-lavender-200"
+                    className="inline-flex items-center mt-5 rounded-xl border border-gold-400/40 bg-gold-500/10 px-4 py-2.5 text-sm font-semibold text-gold-200"
                   >
                     {button}
                   </a>
