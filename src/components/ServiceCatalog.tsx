@@ -5,13 +5,13 @@ const offerings = [
     title: 'AI Video Ads & Reels',
     ar: 'إعلانات وفيديوهات بالذكاء الاصطناعي',
     text: 'Creative concepts, scripts, AI visuals, voiceovers and motion-led edits for social platforms.',
-    image: 'https://images.pexels.com/photos/3379943/pexels-photo-3379943.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    image: 'https://images.pexels.com/photos/2873486/pexels-photo-2873486.jpeg?auto=compress&cs=tinysrgb&w=1400',
   },
   {
     title: 'Electronic Restaurant Menus',
     ar: 'منيو إلكتروني للمطاعم والكافيهات',
     text: 'Branded digital menus with QR access and clear food presentation for restaurants and cafés.',
-    image: 'https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    image: 'https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1400',
     url: 'https://restaurant-menu-saas.pages.dev/#/port-said-fish',
     button: 'مشاهدة المنيو',
   },
@@ -19,19 +19,19 @@ const offerings = [
     title: 'Websites & Landing Pages',
     ar: 'تصميم مواقع وصفحات هبوط',
     text: 'Modern responsive websites and focused landing pages for services, products and brands.',
-    image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    image: 'https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1400',
   },
   {
     title: 'Digital Products & eBooks',
     ar: 'منتجات رقمية وكتب إلكترونية',
     text: 'Digital guides, downloadable products, illustrated books and publishing-ready concepts.',
-    image: 'https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    image: 'https://images.pexels.com/photos/4170629/pexels-photo-4170629.jpeg?auto=compress&cs=tinysrgb&w=1400',
   },
   {
     title: 'Presentations & Company Profiles',
     ar: 'عروض تقديمية وبروفايل شركات',
     text: 'Structured, polished presentations, portfolios and company profiles with a consistent visual system.',
-    image: 'https://images.pexels.com/photos/5905445/pexels-photo-5905445.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    image: 'https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=1400',
   },
   {
     title: 'Visual Identity & Branding',
@@ -43,7 +43,7 @@ const offerings = [
     title: 'Social Content & Campaign Assets',
     ar: 'محتوى السوشيال ميديا والحملات',
     text: 'Reels, carousels, campaign visuals and content packages designed for a coherent brand presence.',
-    image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1400',
   },
 ];
 
