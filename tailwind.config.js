@@ -29,6 +29,20 @@ export default {
           800: '#6f5205',
           900: '#4d3903',
         },
+        // Backward-compatible alias so existing sections also use the gold brand palette.
+        lavender: {
+          50: '#fffdf5',
+          100: '#fbf3cf',
+          200: '#f5e6a8',
+          300: '#ead27a',
+          400: '#dfc45a',
+          500: '#d4af37',
+          600: '#b99120',
+          700: '#8f6b08',
+          800: '#6f5205',
+          900: '#4d3903',
+          950: '#2f2405',
+        },
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
