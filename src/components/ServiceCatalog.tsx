@@ -12,7 +12,7 @@ const offerings = [
     ar: 'منيو إلكتروني للمطاعم والكافيهات',
     text: 'Branded digital menus with QR access and clear food presentation for restaurants and cafés.',
     image: 'https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1400',
-    url: 'https://restaurant-menu-saas.pages.dev/#/abu-khadija',
+    url: 'https://restaurant-menu-saas.pages.dev/#/abu-khadija?source=fatma',
     button: 'مشاهدة المنيو',
   },
   {
@@ -84,8 +84,6 @@ export default function ServiceCatalog() {
                   {url && (
                     <a
                       href={url}
-                      target="_blank"
-                      rel="noopener noreferrer"
                       className="inline-flex items-center mt-5 rounded-xl border border-lavender-400/40 bg-lavender-500/10 px-4 py-2.5 text-sm font-semibold text-lavender-200 hover:bg-lavender-500/20 hover:border-lavender-300 transition-all"
                     >
                       {button}
