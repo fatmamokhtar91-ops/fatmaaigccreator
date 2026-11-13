@@ -1,4 +1,3 @@
-import { Heart } from 'lucide-react';
 import { PORTFOLIO_DATA } from '@/data/portfolio';
 
 const NAV_LINKS = [
@@ -28,7 +27,7 @@ export default function Footer() {
                 {PORTFOLIO_DATA.brandInitial}
               </span>
               <span className="font-display font-bold text-lg">
-                Fatma <span className="text-lavender-400">| AIGC Creator</span>
+                Fatma AI <span className="text-lavender-400">| AIGC Creator</span>
               </span>
             </div>
             <p className="text-sm text-ink-400 leading-relaxed max-w-xs">
@@ -69,9 +68,7 @@ export default function Footer() {
 
         <div className="pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-sm text-ink-500 flex items-center gap-1.5">
-            © {new Date().getFullYear()} {PORTFOLIO_DATA.name}. Made with
-            <Heart size={14} className="text-lavender-400" fill="currentColor" />
-            and AI
+            © {new Date().getFullYear()} {PORTFOLIO_DATA.name}. Built with AI
           </p>
           <p className="text-xs text-ink-500">{PORTFOLIO_DATA.footerTagline}</p>
         </div>
